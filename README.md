@@ -1,22 +1,27 @@
 # Network Tools (configuration)
 
-Depending on the Raspberry PI used, there can be multiple Network managers used
-for configuration of not eth and wlan.
-The configuration process can be quite Jarring.
-The tools in this folder are provided to help the user with the configuration 
-process.
+A library to help with easy configuration of Network connections.
+It is basically a wrapper of shell functions used for configuring 
+Network device settings on debian distros.
+
+| Functions |
+|-----------|
+|Change eth0 to use a static address|
+|Change wlan0 to use a static address|
+|Check comms protocol of devices on the network|
+|Disable DHCPD if NetworkManager is functional
+|get available network addresses|
 
 
-## Table of Contents
+## Tools
 
 -[Auth_SSID](#installation)
-- [Installation](#installation)
+- [NetworkWizard](#installation)
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#GPL)
 
-## Installation
 
 ###Auth_SSID.py
 Tool is used to verify that a given wireless ssid is currently accessible
